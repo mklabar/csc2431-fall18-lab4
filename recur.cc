@@ -1,9 +1,8 @@
 #include <iostream>
 
-//TESTING GIT PUSH TO MAST
 //TODO #1.1: add a function prototype for fib
 
-//TODO #2.1: add a function prototype for fact
+size_t fact(const size_t);
 
 int main()
 {
@@ -16,5 +15,10 @@ int main()
 
 //TODO #2.3: add your recursive fib function from class
 
-
-//TODO #2.4: add your recursive fact function from class
+size_t fact(const size_t N)
+{
+  if(N==0)
+    return 1;
+  else
+    return N*fact(N-1);
+}
